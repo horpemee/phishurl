@@ -1,0 +1,29 @@
+.progress-bar {
+  width: 150px;
+  height: 50%;
+  margin: auto;
+  margin-top: 300px;
+  .progress-red {
+    .CircularProgressbar-path {
+      stroke: red !important;
+    }
+  }
+  .progress-yellow {
+    .CircularProgressbar-path {
+      stroke: yellow !important;
+    }
+  }
+  .progress-green {
+    .CircularProgressbar-path {
+      stroke: green !important;
+    }
+  }
+
+  @media (min-width: 412px) and (max-width: 500px) {
+    margin-top: 230px;
+  }
+
+  @media (min-width: 750px) and (max-width: 912px) {
+    margin-top: 300px;
+  }
+}

@@ -1,0 +1,34 @@
+.navBar-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  .logo {
+    h1 {
+      cursor: pointer;
+      font-size: 40px;
+      color: black;
+    }
+  }
+
+  ul.navLinks {
+    width: 700px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    list-style: none;
+
+    a {
+      color: black;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ccc;
+    }
+  }
+}
