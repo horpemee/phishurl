@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 import Search from "../../components/searchbar/Search";
-// import Progress from "../../components/progressbar/Progress";
-// import Spinner from "../../components/spinner/Spinner";
 
 const Home = () => {
   const [value, setValue] = useState("");
+  const [progress, setProgress] = useState(false);
   return (
-    <div className="wrapper">
+    <div className={`wrapper ${progress ? "backdrop-blur" : ""}`}>
       <Navbar />
       <Search value={value} setValue={setValue} />
       {/*<Progress value={value} />*/}

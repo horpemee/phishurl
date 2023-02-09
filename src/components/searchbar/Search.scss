@@ -1,57 +1,69 @@
-.search-bar {
-  height: 80px;
-  position: absolute;
-  border: 1px solid #ccc;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 18%;
-  margin: auto;
-  border-radius: 50px;
-  width: 60%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.search-container {
+  .search-bar {
+    height: 80px;
+    position: absolute;
+    border: 1px solid #ccc;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 18%;
+    margin: auto;
+    border-radius: 50px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    padding: 15px;
 
-  padding: 15px;
+    gap: 20px;
 
-  gap: 20px;
-
-  .icon {
-    color: gray;
-  }
-  .search {
-    background: transparent;
-    // background-color: rgb(2, 1, 4);
-    border: none;
-    outline: none;
-    font-size: 18px;
-    color: black;
-    padding: 3px;
-    width: 1700px;
-
-    &::placeholder {
+    .icon {
       color: gray;
     }
-  }
+    .search {
+      background: transparent;
+      // background-color: rgb(2, 1, 4);
+      border: none;
+      outline: none;
+      font-size: 18px;
+      color: black;
+      padding: 3px;
+      width: 1700px;
 
-  button {
-    float: right;
-    width: 150px;
-    padding: 10px;
-    background: transparent;
-    font-size: 20px;
-    color: white;
-    border-radius: 10px;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-    // outline: none;
-  }
+      &::placeholder {
+        color: gray;
+      }
+    }
+    .error-msg {
+      margin: auto;
+      color: red;
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      left: 300px;
+      top: 100px;
+      // width: 25%;
+      overflow: hidden;
+    }
+    button {
+      float: right;
+      width: 150px;
+      padding: 10px;
+      background: transparent;
+      font-size: 20px;
+      color: white;
+      border-radius: 10px;
+      background-color: black;
+      border: none;
+      cursor: pointer;
+      // outline: none;
+    }
 
-  button:hover {
-    color: black;
-    background-color: white;
-    border: 1px solid #ccc;
+    button:hover {
+      color: black;
+      background-color: white;
+      border: 1px solid #ccc;
+    }
   }
 }
