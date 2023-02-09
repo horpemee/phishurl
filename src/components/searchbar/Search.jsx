@@ -4,9 +4,6 @@ import "./Search.scss";
 import Spinner from "../spinner/Spinner";
 import validator from "validator";
 import Progress from "../progressbar/Progress";
-import { NoEncryption } from "@mui/icons-material";
-import { Hidden } from "@mui/material";
-// import { RotatingLines } from "react-loader-spinner";
 
 const Search = ({ value, setValue }) => {
   const [loading, setLoading] = useState(false);
