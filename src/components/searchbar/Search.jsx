@@ -5,7 +5,7 @@ import "./Search.scss";
 import Spinner from "../spinner/Spinner";
 import validator from "validator";
 // import Progress from "../progressbar/Progress";
-import Modal from "react-modal";
+// import Modal from "react-modal";
 import Progress from "../progressbar/Progress";
 
 const Search = ({ value, setValue, isClicked, setIsClicked }) => {
@@ -15,7 +15,7 @@ const Search = ({ value, setValue, isClicked, setIsClicked }) => {
   const [errorMessage, setErrorMessage] = useState("");
   // const [progress, setProgress] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [modalContent, setModalContent] = useState("");
+  // const [modalContent, setModalContent] = useState("");
 
   function handleSubmit(event) {
     if (validator.isURL(value)) {
@@ -24,7 +24,7 @@ const Search = ({ value, setValue, isClicked, setIsClicked }) => {
         setLoading(false);
         // setIsClicked(true);
         setShowModal(true);
-        setModalContent(`${value} is a phishing URL`);
+      //   setModalContent(`${value} is a phishing URL`);
       }, 4000);
       // window.location.href = value;
     } else {
