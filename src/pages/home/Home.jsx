@@ -3,11 +3,11 @@ import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 import Search from "../../components/searchbar/Search";
 
-const Home = () => {
+const Home = (loading, setLoading) => {
   const [value, setValue] = useState("");
 
   return (
-    <div className="wrapper">
+    <div className={`wrapper ${loading ? "modal" : ""}`}>
       <Navbar />
       <Search value={value} setValue={setValue} />
       {/*<Progress value={value} />*/}

@@ -66,4 +66,18 @@
       border: 1px solid #ccc;
     }
   }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px 0px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+  }
 }

@@ -11,10 +11,10 @@ const Progress = ({ value }) => {
         text={`${value}%`}
         className={`${
           value <= 30
-            ? "progress-red"
+            ? "progress-green"
             : value <= 69
             ? "progress-yellow"
-            : value >= 70 && "progress-green"
+            : value >= 70 && "progress-red"
         }`}
       />
     </div>
