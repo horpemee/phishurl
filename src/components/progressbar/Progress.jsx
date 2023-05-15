@@ -2,7 +2,7 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./progress.scss";
 
-const Progress = ({ value }) => {
+const Progress = ({ value, isPhish }) => {
   return (
     <div className="progress-bar">
       <CircularProgressbar
@@ -10,11 +10,7 @@ const Progress = ({ value }) => {
         strokeWidth={5}
         text={`${value}%`}
         className={`${
-          value <= 30
-            ? "progress-green"
-            : value <= 69
-            ? "progress-yellow"
-            : value >= 70 && "progress-red"
+          isPhish === false ? "progress-green" : "progress-red"
         }`}
       />
     </div>
