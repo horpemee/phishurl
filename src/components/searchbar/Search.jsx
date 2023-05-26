@@ -56,11 +56,6 @@ const Search = () => {
   };
 
 
-  
-
-
-
-
   // const [modalContent, setModalContent] = useState("");
 
   function handleSubmit(event) {
